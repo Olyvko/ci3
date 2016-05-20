@@ -13,11 +13,12 @@ class My_new extends CI_Controller {
 
         //redirect('../');
        // redirect($this->config->item('base_url').'/my_new');
-        var_dump($aRes);
-        var_dump($this->config->item('base_url'));
+      //  var_dump($aRes);
+       // var_dump($this->config->item('base_url'));
         $this->load->helper('my_new_helper');
-        var_dump(my_test());
-        
+        $this->load->helper('url');
+
+       // var_dump(my_test());
         $this->load->view('my_new');
     }
 
